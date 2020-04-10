@@ -23,10 +23,20 @@ class PatientsController extends Controller
     {	
         if($request->cardiac_arrest || $request->irreversible_hypotension || 
             $request->motor_response || $request->severe_burn || 
-            $request->irreversible_hypotension)
+            $request->other_mortality_conditions)
         {
             return redirect('/categories/blue');
         }
+        $patient = new Patient;
+        $patient->cardiac_arrest = $request->cardiac_arrest ? true : false;
+        $patient->irreversible_hypotension = $request->irreversible_hypotension ? true : false;
+        $patient->motor_response = $request->motor_response ? true : false;
+        $patient->severe_burn = $request->severe_burn ? true : false;
+        $patient->other_mortality_conditions = $request->other_mortality_conditions ? true : false;
+        $patient->name = $request->name;
+        $patient->surname = $request->surname;
+        $patient->age = $request->age;
+        $patient->save();
         return redirect('/patients/add/main');
     }
 
