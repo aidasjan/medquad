@@ -31,19 +31,19 @@
                     <h3 class='my-4 font-weight-bold'>2. SOFA Scale</h3>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
-                    <label>Best eye response</label>
+                    <label>PaO<sub>2</sub>, mmHg</label>
                     <input type='number' value="" step='0.01' name='pao2_fio2' class='form-control' required>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
-                    <label>Platelets</label>
+                    <label>Platelets, x10<sup>3</sup></label>
                     <input type='number' value="" step='0.01' name='platelets' class='form-control' required>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
-                    <label>Bilirubin</label>
+                    <label>Bilirubin, mg/dL</label>
                     <input type='number' value="" step='0.01' name='bilirubin' class='form-control' required>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
-                    <label>Mabp</label>
+                    <label>MABP, mmHg</label>
                     <input type='number' value="" step='0.01' name='mabp' class='form-control' required>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
@@ -59,13 +59,13 @@
                     <input type='number' value="" step='0.01' name='norepinephrine' class='form-control' required>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
-                    <label>Creatinine</label>
+                    <label>Creatinine, mg/dL</label>
                     <input type='number' value="" step='0.01' name='creatinine' class='form-control' required>
                 </div>
                 <div class='form-group col-md-10 offset-md-1 px-5'>
                     <div>
                         <input class="form-check-input" type="checkbox" name='at_least_one_organ_failure'>
-                        <label>At least one organ failure</label>
+                        <label>Patient has at least one organ failure</label>
                     </div>
                 </div>
             </div>
