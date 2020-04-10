@@ -25,7 +25,7 @@ class PatientsController extends Controller
             $request->motor_response || $request->severe_burn || 
             $request->irreversible_hypotension)
         {
-            echo ":(";
+            return redirect('/categories/blue');
         }
         return redirect('/patients/add/main');
     }

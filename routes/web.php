@@ -13,3 +13,5 @@
 
 Route::get('/patients/add/init', 'PatientsController@createInit');
 Route::post('/patients/add/init', 'PatientsController@storeInit');
+Route::get('/patients/add/main', 'PatientsController@createMain');
+Route::post('/patients/add/main', 'PatientsController@storeMain');
