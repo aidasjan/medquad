@@ -27,7 +27,7 @@
         
         @include('inc.navbar')
         
-        <div class='text-center pt-5' style='padding-bottom: 12rem'>
+        <div class='pt-5' style='padding-bottom: 12rem'>
             @yield('content')
         </div>
 

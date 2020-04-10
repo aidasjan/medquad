@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+Route::get('/patients/add/init', 'PatientsController@createInit');
+Route::post('/patients/add/init', 'PatientsController@storeInit');

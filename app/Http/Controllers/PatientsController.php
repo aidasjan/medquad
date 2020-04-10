@@ -11,7 +11,18 @@ class PatientsController extends Controller
    public function index()
    {
        $patients = Patient::all();	
-       return view('pages.index')->with($data);
+       return view('pages.patients.index')->with($patients);
    }
+
+   public function createInit()
+   {	
+       return view('pages.patient.create_init');
+   }
+
+   public function storeInit(Request $request)
+   {	
+       dd($request->all());
+   }
+
 
 }
