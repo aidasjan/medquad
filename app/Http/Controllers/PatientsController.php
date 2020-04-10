@@ -14,6 +14,26 @@ class PatientsController extends Controller
         return view('pages.patient.index')->with("patients", $patients);
     }
 
+    public function indexBlue()
+    {
+        return view('categories.blue');
+    }
+
+    public function indexYellow()
+    {
+        return view('categories.yellow');
+    }
+
+    public function indexRed()
+    {
+        return view('categories.red');
+    }
+
+    public function indexGreen()
+    {
+        return view('categories.green');
+    }
+
     public function createInit()
     {	
         return view('pages.patient.create_init');
