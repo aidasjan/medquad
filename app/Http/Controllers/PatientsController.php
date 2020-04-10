@@ -21,7 +21,12 @@ class PatientsController extends Controller
 
     public function storeInit(Request $request)
     {	
-        dd($request->all());
+        if($request->cardiac_arrest || $request->irreversible_hypotension || 
+            $request->motor_response || $request->severe_burn || 
+            $request->irreversible_hypotension)
+        {
+            echo ":(";
+        }
         return redirect('/patients/add/main');
     }
 

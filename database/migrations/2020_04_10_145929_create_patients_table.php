@@ -22,14 +22,13 @@ class CreatePatientsTable extends Migration
             $table->boolean('cardiac_arrest');
             $table->boolean('irreversible_hypotension');
             $table->boolean('motor_response');
+            $table->boolean('severe_burn');
+            $table->boolean('other_mortality_conditions');
             
             //Glasgow comma scale
             $table->integer('best_motor_response')->nullable();
             $table->integer('best_verbal_response')->nullable();
             $table->integer('best_eye_response')->nullable();
-
-            $table->integer('burn_size')->nullable();
-            $table->boolean('other_mortality_conditions');
 
             //Sofa scale
             $table->double('pao2_fio2')->nullable();
