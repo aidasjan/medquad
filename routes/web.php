@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('/', 'PatientsController@index');
 Route::get('/patients/add/init', 'PatientsController@createInit');
 Route::post('/patients/add/init', 'PatientsController@storeInit');
 Route::get('/patients/{id}/add/main', 'PatientsController@createMain');
@@ -20,3 +21,4 @@ Route::get('/categories/blue', 'PatientsController@indexBlue');
 Route::get('/categories/red', 'PatientsController@indexRed');
 Route::get('/categories/yellow', 'PatientsController@indexYellow');
 Route::get('/categories/green', 'PatientsController@indexGreen');
+Route::post('/patients/{id}/add/main', 'PatientsController@storeMain');
