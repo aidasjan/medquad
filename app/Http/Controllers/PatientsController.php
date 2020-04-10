@@ -21,12 +21,6 @@ class PatientsController extends Controller
 
     public function storeInit(Request $request)
     {	
-        if($request->cardiac_arrest || $request->irreversible_hypotension || 
-            $request->motor_response || $request->severe_burn || 
-            $request->other_mortality_conditions)
-        {
-            return redirect('/categories/blue');
-        }
         $patient = new Patient;
         $patient->cardiac_arrest = $request->cardiac_arrest ? true : false;
         $patient->irreversible_hypotension = $request->irreversible_hypotension ? true : false;
@@ -37,6 +31,9 @@ class PatientsController extends Controller
         $patient->surname = $request->surname;
         $patient->age = $request->age;
         $patient->save();
+        if($patient->isCritical()){
+            return redirect('/categories/blue');
+        }
         return redirect('/patients'.'/'.$patient->id.'/add/main/');
     }
 
@@ -48,7 +45,22 @@ class PatientsController extends Controller
 
     public function storeMain(Request $request, $id)
     {	
-        dd($request->all());
+        $patient = Patient::find($id);
+        $patient->best_eye_response = $request->best_eye_response;
+        $patient->best_verbal_response = $request->best_verbal_response;
+        $patient->best_motor_response = $request->best_motor_response;
+        $patient->pao2_fio2 = $request->pao2_fio2;
+        $patient->platelets = $request->platelets;
+        $patient->bilirubin = $request->bilirubin;
+        $patient->mabp = $request->mabp;
+        $patient->dopamine = $request->dopamine;
+        $patient->epinephrine = $request->epinephrine;
+        $patient->norepinephrine = $request->norepinephrine;
+        $patient->creatinine = $request->creatinine;
+        $patient->at_least_one_organ_failure = $request->at_least_one_organ_failure ? true : false;
+        $patient->save();
+        $group = $patient->getGroup();
+        return redirect('/categories'.'/'.$patient->getGroupNameByNumber($group));
     }
 
 

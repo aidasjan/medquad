@@ -14,11 +14,11 @@
   
                 <div class='form-group col-md-6 offset-md-1'>
                     <label>Best motor response</label>
-                    <select class='form-control' name='best_motor_response'>
+                    <select class='form-control' name='best_eye_response'>
                         <option value='1'>No eye opening</option>
                         <option value='2'>Eye opens to painful stimulus</option>
-                        <option value='3'>No eye opening</option>
-                        <option value='4'>No eye opening</option>
+                        <option value='3'>Eye opens to verbal command</option>
+                        <option value='4'>Eyes open spontaneously</option>
                     </select>
                 </div>
                 <div class='form-group col-md-6 offset-md-1'>
@@ -33,7 +33,7 @@
                 </div>
                 <div class='form-group col-md-6 offset-md-1'>
                     <label>Best motor response</label>
-                    <select class='form-control' name='best_eye_response'>
+                    <select class='form-control' name='best_motor_response'>
                         <option value='1'>No motor response</option>
                         <option value='2'>Extension to painful stimulus</option>
                         <option value='3'>Flexion to painful stimulus</option>
