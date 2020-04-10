@@ -1,0 +1,114 @@
+
+:root {
+    --main_color: #418600;
+    --main_color_dark: #003b46;
+    --danger_color: #b90000;
+    --darktext_color: #333;
+    --success_color: #008844;
+    --lighttext_color: #fff;
+    --grey_color: #ced4da;
+
+    --footer-height: 12rem;
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    width: 100%;
+    font-family: Quicksand, sans-serif;
+    background-color: #e1e1e1;
+    color: var(--darktext_color);
+    position: relative;
+    min-height: 100vh;
+}
+
+#app{
+    padding-bottom: var(--footer-height);
+}
+
+.full_width{
+    width: 100%;
+    margin: 0;
+}
+
+.container_main{
+    background-color: var(--main_color);
+}
+
+.container_white{
+    background-color: #ffffff;
+}
+
+.button_big{	
+    display: inline-block;	
+    background-color: var(--main_color);	
+    color: #fff;	
+    font-size: large;	
+    font-weight: bold;	
+    border: 3px solid var(--main_color);	
+    text-transform: uppercase;	
+    width: 100%;	
+}	
+.button_big:hover{	
+    background-color: var(--main_color_dark);	
+    transition: 0.15s;	
+    border: 3px solid var(--main_color_dark);	
+}	
+.link_red{	
+    color: #d9534f;	
+    font-weight: bold;	
+    transition: 0.2s;	
+}
+
+.table_main{
+    background-color: #fafafa;
+    margin: auto;
+    text-align: left;
+    width: 100%;
+}
+
+.table_main tr td{
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.table_main tr th{
+    padding: 8px;
+    background-color: var(--main_color);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.table_main a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--main_color);
+}
+
+.table_main a:hover{
+    transition: 0.15s;
+    color: var(--main_color_dark);
+}
+
+.table_main tr:nth-child(odd){
+    background-color: #eee;
+}
+
+/* Bootstrap */
+
+.btn-primary{
+    background-color: var(--main_color);
+    color: var(--lighttext_color);
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    padding: 8px 15px;
+}
+.btn-primary:hover{
+    background-color: var(--main_color_dark);
+}
+.btn-primary.active:focus{
+    background-color: var(--main_color_dark);
+}
