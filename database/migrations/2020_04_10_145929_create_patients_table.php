@@ -18,9 +18,10 @@ class CreatePatientsTable extends Migration
             $table->string('name');
             $table->string('surname');
             $table->integer('age');
-            $table->string('group');
+            $table->string('group')->nullable();
             $table->boolean('cardiac_arrest');
             $table->boolean('irreversible_hypotension');
+            $table->boolean('motor_response');
             
             //Glasgow comma scale
             $table->integer('best_motor_response')->nullable();
