@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Page info -->
-    <title>FastB2B</title>
+    <title>Medquad</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
