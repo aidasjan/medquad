@@ -48,7 +48,7 @@ class PatientsController extends Controller
 
     public function storeMain(Request $request, $id)
     {	
-        dd($id);
+        dd($request->all());
     }
 
 
