@@ -31,13 +31,30 @@
                     <h3 class='my-4 font-weight-bold'>2. Current conditions</h3>
                 </div>
                 <div class='form-group col-md-10 offset-md-1 px-5'>
+                    <hr/>
                     <div>
                         <input class="form-check-input" type="checkbox" name='cardiac_arrest'>
                         <label>Cardiac Arrest</label>
                     </div>
+                    <hr/>
                     <div>
                         <input class="form-check-input" type="checkbox" name='cardiac_arrest'>
-                        <label>Cardiac Arrest</label>
+                        <label>Irreversible age-specific hypotension unresponsive to fluid resuicitation and vasopressor therapy</label>
+                    </div>
+                    <hr/>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name='cardiac_arrest'>
+                        <label>Other conditions resulting in immediate or near-immediate mortality even with aggressive therapy</label>
+                    </div>
+                    <hr/>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name='cardiac_arrest'>
+                        <label>Traumatic brain injury with no motor response to painful stimulus</label>
+                    </div>
+                    <hr/>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name='cardiac_arrest'>
+                        <label>Traumatic brain injury with no motor response to painful stimulus</label>
                     </div>
                 </div>
             </div>
