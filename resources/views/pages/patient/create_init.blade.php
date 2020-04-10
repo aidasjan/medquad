@@ -43,13 +43,18 @@
                     </div>
                     <hr/>
                     <div>
-                        <input class="form-check-input" type="checkbox" name='other_mortality_conditions'>
-                        <label>Other conditions resulting in immediate or near-immediate mortality even with aggressive therapy</label>
+                        <input class="form-check-input" type="checkbox" name='motor_response'>
+                        <label>Traumatic brain injury with no motor response to painful stimulus</label>
                     </div>
                     <hr/>
                     <div>
-                        <input class="form-check-input" type="checkbox" name='motor_response'>
-                        <label>Traumatic brain injury with no motor response to painful stimulus</label>
+                        <input class="form-check-input" type="checkbox" name='severe_burn'>
+                        <label>Severe burns: where predicted survival ≤ 10% even with unlimited aggressive therapy</label>
+                    </div>
+                    <hr/>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name='other_mortality_conditions'>
+                        <label>Other conditions resulting in immediate or near-immediate mortality even with aggressive therapy</label>
                     </div>
                     <hr/>
                     
