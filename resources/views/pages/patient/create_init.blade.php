@@ -28,11 +28,17 @@
         <div class='row container_white shadow py-4 my-3'>
             <div class='col'>
                 <div class='form-group col-md-10 offset-md-1'>
-                    <h3 class='my-4 font-weight-bold'>2. Question</h3>
+                    <h3 class='my-4 font-weight-bold'>2. Current conditions</h3>
                 </div>
-                <div class='form-group col-md-10 offset-md-1'>
-                    <label>Field</label>
-                    <input type='text' value="" name='field' class='form-control'>
+                <div class='form-group col-md-10 offset-md-1 px-5'>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name='cardiac_arrest'>
+                        <label>Cardiac Arrest</label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name='cardiac_arrest'>
+                        <label>Cardiac Arrest</label>
+                    </div>
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@ class PatientsController extends Controller
 
     public function storeInit(Request $request)
     {	
-        dd($request->name);
+        dd($request->all());
         return redirect('/patients/add/main');
     }
 
