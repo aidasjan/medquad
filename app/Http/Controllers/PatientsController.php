@@ -37,17 +37,18 @@ class PatientsController extends Controller
         $patient->surname = $request->surname;
         $patient->age = $request->age;
         $patient->save();
-        return redirect('/patients/add/main');
+        return redirect('/patients'.'/'.$patient->id.'/add/main/');
     }
 
-    public function createMain(Request $request)
-    {	
-        return view('pages.patient.create_main');
+    public function createMain(Request $request, $id)
+    {
+        $patient = Patient::find($id);
+        return view('pages.patient.create_main')->with('patient', $patient);
     }
 
-    public function storeMain(Request $request)
+    public function storeMain(Request $request, $id)
     {	
-        dd($request->all());
+        dd($id);
     }
 
 
