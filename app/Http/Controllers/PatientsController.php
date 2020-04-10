@@ -52,6 +52,9 @@ class PatientsController extends Controller
         $patient->age = $request->age;
         $patient->save();
         if($patient->isCritical()){
+            $patient->group_value = 3;
+            $patient->group = $patient->getGroupNameByNumber(3);
+            $patient->save();
             return redirect('/categories/blue');
         }
         return redirect('/patients'.'/'.$patient->id.'/add/main/');
@@ -79,8 +82,11 @@ class PatientsController extends Controller
         $patient->creatinine = $request->creatinine;
         $patient->at_least_one_organ_failure = $request->at_least_one_organ_failure ? true : false;
         $patient->save();
-        $group = $patient->getGroup();
-        return redirect('/categories'.'/'.$patient->getGroupNameByNumber($group));
+        $group_value = $patient->getGroup();
+        $sofa = $patient->getSOFAScore();
+        $patient->group_value = $group_value;
+        $patient->group = $patient->getGroupNameByNumber($group_value);
+        return redirect('/categories'.'/'.$patient->group)->with('sofa', $sofa);
     }
 
 

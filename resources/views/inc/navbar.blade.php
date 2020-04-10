@@ -11,13 +11,14 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase font-weight-bold" style='color: #fff;' href="{{url('/')}}"> Main </a>
+                    
                 </li>
             </ul>
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-3">
-                
+                <a class="nav-link text-uppercase font-weight-bold mx-2" style='color: #fff;' href="{{url('/')}}"> Main </a>
+                <a class="nav-link text-uppercase font-weight-bold mx-2" style='color: #fff;' href="{{url('/patients/add/init')}}"> Add New Patient </a>
             </ul>
         </div>
     </div>
