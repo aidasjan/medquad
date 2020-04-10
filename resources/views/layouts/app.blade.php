@@ -19,6 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link href="{{ asset('fa/css/all.css') }}" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="{{url('/favicon.png')}}"/>
 </head>
