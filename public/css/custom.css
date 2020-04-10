@@ -112,3 +112,8 @@ body{
 .btn-primary.active:focus{
     background-color: var(--main_color_dark);
 }
+
+input[type=checkbox]
+{
+  padding: 10px;
+}
