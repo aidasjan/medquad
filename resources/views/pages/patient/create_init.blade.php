@@ -10,11 +10,11 @@
                 <div class='form-group col-md-10 offset-md-1'>
                     <h3 class='my-4 font-weight-bold'>1. Patient personal information</h3>
                 </div>
-                <div class='form-group col-md-10 offset-md-1'>
+                <div class='form-group col-md-6 offset-md-1'>
                     <label>Name</label>
                     <input type='text' value="" name='name' class='form-control' required>
                 </div>
-                <div class='form-group col-md-10 offset-md-1'>
+                <div class='form-group col-md-6 offset-md-1'>
                     <label>Surname</label>
                     <input type='text' value="" name='surname' class='form-control' required>
                 </div>

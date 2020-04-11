@@ -68,16 +68,18 @@ class Patient extends Model
             $sofa+=4;
         }
 
-        if($this->mabp < 70){
-            $sofa++;
-        } else if ($this->dopamine < 5){
-            $sofa+=2;
-        } else if ($this->isBetween($this->dopamine, 6, 15) || $this->epinephrine < 0.1 || $this->norepinephrine < 0.1){
-            $sofa+=3;
-        } else if ($this->dopamine > 15 || $this->epinephrine > 0.1 || $this->norepinephrine > 0.1){
-            $sofa+=4;
+        if($this->mabp !== null){
+            if ($this->mabp < 70){
+                $sofa++;
+            } else if ($this->dopamine && $this->dopamine < 5){
+                $sofa+=2;
+            } else if ($this->dopamine && $this->epinephrine && $this->norepinephrine && $this->isBetween($this->dopamine, 6, 15) || $this->epinephrine < 0.1 || $this->norepinephrine < 0.1){
+                $sofa+=3;
+            } else if ($this->dopamine && $this->epinephrine && $this->norepinephrine && $this->dopamine > 15 || $this->epinephrine > 0.1 || $this->norepinephrine > 0.1){
+                $sofa+=4;
+            }
         }
-
+        
         if ($this->isBetween($this->getGlazgow(), 13, 14)){
             $sofa++;
         } else if ($this->isBetween($this->getGlazgow(), 10, 12)) {

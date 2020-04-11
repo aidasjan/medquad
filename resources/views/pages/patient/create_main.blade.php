@@ -65,7 +65,7 @@
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>MABP, mmHg</label>
-                    <input type='number' value="" step='0.01' name='mabp' id='mabp' class='form-control' required>
+                    <input type='number' value="" step='0.01' name='mabp' id='mabp' class='form-control'>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>Dopamine</label>
