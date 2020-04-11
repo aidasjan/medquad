@@ -9,6 +9,7 @@
             The adult clinical ventilator allocation protocol applies to all patients aged 18 and older, who arrives at a hospital. All new arrived patients must undergo this protocol if there is shortage of ventilating systems in your hospital. The protocol consists of three steps: <br/>1. application of exclusion criteria  <br/>2. assessment of mortality risk <br/>3. periodic clinical assessments (“time trials”)<br><br>
             After filling Step 1 and Step 2 your patient will be asigned to BLUE, RED, YELLOW or GREEN Category and put into Medquad queue. After asigning a patient to the category, you will be instructed, wheater a patient gets a ventilator or alternative forms of medical interventions must be applied.
         </p>
+        <hr/>
 
         <div class='row container_white shadow py-4 mt-4 mb-3'>
             <div class='col'>

@@ -5,11 +5,22 @@
     {{ csrf_field() }}
     <div class='container'>
 
+        <h2>Step 2: Mortality Risk Assessment Using SOFA</h2>
+        <p>
+            Only those patients without exclusion criteria can proceed to Step 2. <br/><br/>
+            SOFA Scale is used to assess the mortality risk of this patient. What is important to understand, that in this case, when patients' quantity exceeds your hospital's ventilators' quantity, the bigger SOFA Score is, the higher is the mortality risk of your patient ant the fewer chance for him or her to access ventilator therapy. Because, ventilators must be distributed optimally in order to save as many lives as possible.<br/><br/>
+            Assess your patient, using SOFA Scale. You need to enter all the parameters asked, then the algorithm will assign your patient to RED, YELLOW or GREEN category. After that you will be instructed, whether a patient gets a ventilator or alternative forms of medical interventions must be applied.
+        </p>
+        <hr/>
+
         <div class='row container_white shadow py-4 my-3'>
             <div class='col'>
 
                 <div class='form-group col-md-10 offset-md-1'>
                     <h3 class='my-4 font-weight-bold'>1. Glasgow comma scale</h3>
+                    <p>
+                        Assess your patient using Glasgow Coma Scale. The final score will be automatically included into the SOFA Scale.
+                    </p>
                 </div>
   
                 <div class='form-group col-md-6 offset-md-1'>
@@ -50,19 +61,26 @@
             <div class='col'>
                 <div class='form-group col-md-10 offset-md-1'>
                     <h3 class='my-4 font-weight-bold'>2. SOFA Scale</h3>
+                    <p>
+                        Fill in the required fields and the system will automatically assign your patient to RED, YELLOW or GREEN Category. Then you will be instructed, whether a patient gets a ventilator or alternative forms of medical interventions must be applied.
+                    </p>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>PaO<sub>2</sub>/FiO<sub>2</sub>, mmHg</label>
                     <input type='number' value="" step='0.01' name='pao2_fio2' class='form-control' required>
                 </div>
+                <hr class='form-group col-md-6 offset-md-1'/>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>Platelets, x10<sup>3</sup></label>
                     <input type='number' value="" step='0.01' name='platelets' class='form-control' required>
                 </div>
+                <hr class='form-group col-md-6 offset-md-1'/>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>Bilirubin, mg/dL</label>
                     <input type='number' value="" step='0.01' name='bilirubin' class='form-control' required>
                 </div>
+                <hr class='form-group col-md-6 offset-md-1'/>
+                <h5 class='form-group offset-md-1 px-3 font-weight-bold'>Hypotension</h5>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>MABP, mmHg</label>
                     <input type='number' value="" step='0.01' name='mabp' id='mabp' class='form-control'>
@@ -79,10 +97,12 @@
                     <label>Norepinephrine</label>
                     <input type='number' value="" step='0.01' name='norepinephrine' id='norepinephrine' class='form-control' disabled>
                 </div>
+                <hr class='form-group col-md-6 offset-md-1'/>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>Creatinine, mg/dL</label>
                     <input type='number' value="" step='0.01' name='creatinine' class='form-control' required>
                 </div>
+                <hr class='form-group col-md-6 offset-md-1'/>
                 <div class='form-group col-md-10 offset-md-1 px-5'>
                     <div>
                         <input class="form-check-input" type="checkbox" name='at_least_one_organ_failure'>
