@@ -31,7 +31,7 @@
                     <td style="font-weight:bold; text-align:left">{{$patient->surname}}</td>
                     <td style="font-weight:bold; text-align:left">{{$patient->age}}</td>
                     <td><a href='#'><i class="fas fa-edit" style="color:#bd0606"></a></i></td>
-                    <td><a href='#'><i class="fas fa-trash-alt" style="color:#bd0606"></a></i></td>
+                    <td><a href='{{url("/patients/$patient->id/destroy")}}'><i class="fas fa-trash-alt" style="color:#bd0606"></a></i></td>
                 </tr>
                 @endforeach
             <tbody>

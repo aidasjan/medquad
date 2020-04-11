@@ -22,3 +22,4 @@ Route::get('/categories/red', 'PatientsController@indexRed');
 Route::get('/categories/yellow', 'PatientsController@indexYellow');
 Route::get('/categories/green', 'PatientsController@indexGreen');
 Route::post('/patients/{id}/add/main', 'PatientsController@storeMain');
+Route::get('/patients/{id}/destroy', 'PatientsController@destroy');

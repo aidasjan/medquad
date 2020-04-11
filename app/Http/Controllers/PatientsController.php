@@ -93,5 +93,11 @@ class PatientsController extends Controller
         
     }
 
+    public function destroy($id){
+        $patient = Patient::find($id);
+        $patient->delete();
+        return redirect('/');
+    }
+
 
 }

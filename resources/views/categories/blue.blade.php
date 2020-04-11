@@ -8,7 +8,7 @@
                 <div class='form-group col-md-10 offset-md-1' >
                     <h3 class='my-4 font-weight-bold'>Blue category patient</h3>
                     <p>
-                        Patient successfully added to the queue
+                        Patient successfully added to the queue. No ventilator provided for this patient. Use use any other live saving medical intervention and treatment.
                     </p>
                     <a href="{{ url('/patients/crud') }}" class='btn btn-primary my-0' >Back</a> 
                 </div>

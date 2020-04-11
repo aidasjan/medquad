@@ -8,7 +8,7 @@
                 <div class='form-group col-md-10 offset-md-1' >
                     <h3 class='my-4 font-weight-bold'>Red category patient <span class="badge badge-secondary badge-warning">SOFA score: {{ $sofa }}</span></h3>
                     <p>
-                        Patient successfully added to the queue
+                        Patient successfully added to the queue. Put this patient onto artificial lung ventilation. If there are no ventilators available, ventilator is taken from any patient from blue category. If there are no ventilated blue category patient, ventilator is taken from any ventilated patient from yellow category.
                     </p>
                     <a href="{{ url('/patients/crud') }}" class='btn btn-primary my-0' >Back</a> 
                 </div>
