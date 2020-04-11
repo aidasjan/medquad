@@ -65,19 +65,19 @@
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>MABP, mmHg</label>
-                    <input type='number' value="" step='0.01' name='mabp' class='form-control' required>
+                    <input type='number' value="" step='0.01' name='mabp' id='mabp' class='form-control' required>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>Dopamine</label>
-                    <input type='number' value="" step='0.01' name='dopamine' class='form-control'>
+                    <input type='number' value="" step='0.01' name='dopamine' id='dopamine' class='form-control' disabled>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>Epinephrine</label>
-                    <input type='number' value="" step='0.01' name='epinephrine' class='form-control'>
+                    <input type='number' value="" step='0.01' name='epinephrine' id='epinephrine' class='form-control' disabled>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>Norepinephrine</label>
-                    <input type='number' value="" step='0.01' name='norepinephrine' class='form-control'>
+                    <input type='number' value="" step='0.01' name='norepinephrine' id='norepinephrine' class='form-control' disabled>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>Creatinine, mg/dL</label>
@@ -102,4 +102,30 @@
 
     </div>
 </form>
+
+<script>
+
+document.getElementById('mabp').oninput = function () {
+    let dopamine = document.getElementById('dopamine');
+    let mabpval = document.getElementById('mabp').value;
+    if(mabpval >= 70) {
+        dopamine.disabled = false;
+    } else dopamine.disabled = true;
+}
+
+document.getElementById('dopamine').oninput = function () {
+    let epinephrine = document.getElementById('epinephrine');
+    let norepinephrines = document.getElementById('norepinephrine');
+    let dopamineval = document.getElementById('dopamine').value;
+    if(dopamineval >= 5) {
+        epinephrine.disabled = false;
+        norepinephrines.disabled = false;
+    } else {
+        epinephrine.disabled = true;
+        norepinephrines.disabled = true;
+    }
+}
+
+</script>
+
 @endsection

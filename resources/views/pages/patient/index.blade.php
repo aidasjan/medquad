@@ -18,15 +18,14 @@
                 <tr>
                     @if ($patient->group == "blue")
                         <td><i class="fas fa-square" style="color:#0066cc"></i></td>
-                    @endif
-                    @if ($patient->group == "red")
+                    @elseif ($patient->group == "red")
                         <td><i class="fas fa-square" style="color:#bd0606"></i></td>
-                    @endif
-                    @if ($patient->group == "green")
+                    @elseif ($patient->group == "green")
                         <td><i class="fas fa-square" style="color:#009933"></i></td>
-                    @endif
-                    @if ($patient->group == "yellow")
+                    @elseif ($patient->group == "yellow")
                         <td><i class="fas fa-square" style="color:#ffcc00"></i></td>
+                    @else
+                        <td><i class="fas fa-square" style="color:#aaaaaa"></i></td>
                     @endif
                     <td style="font-weight:bold; text-align:left">{{$patient->name}}</td>
                     <td style="font-weight:bold; text-align:left">{{$patient->surname}}</td>
