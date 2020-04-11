@@ -9,7 +9,7 @@
         <h4>Groups:</h4>
         <div class='font-weight-bold'>RED - Put this patient onto artificial lung ventilation</div>
         <div class='font-weight-bold'>YELLOW - Use ventilator as available after all Red category patients received ventilators</div>
-        <div class='font-weight-bold'>BLUE - critical patients, no ventilator is provided, use alternative medical intervention</div>
+        <div class='font-weight-bold'>BLUE - Critical patients, no ventilator is provided, use alternative medical intervention</div>
         <div class='font-weight-bold mb-4'>GREEN - Use alternative form of medical intervention or defer or discharge</div>
 
         <hr/>
