@@ -52,7 +52,7 @@
                     <h3 class='my-4 font-weight-bold'>2. SOFA Scale</h3>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
-                    <label>PaO<sub>2</sub>, mmHg</label>
+                    <label>PaO<sub>2</sub>/FiO<sub>2</sub>, mmHg</label>
                     <input type='number' value="" step='0.01' name='pao2_fio2' class='form-control' required>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
