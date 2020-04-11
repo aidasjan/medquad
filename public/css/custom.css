@@ -24,10 +24,6 @@ body{
     min-height: 100vh;
 }
 
-#app{
-    padding-bottom: var(--footer-height);
-}
-
 .full_width{
     width: 100%;
     margin: 0;

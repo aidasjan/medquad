@@ -28,9 +28,11 @@
         
         @include('inc.navbar')
         
-        <div class='pt-5' style='padding-bottom: 12rem'>
+        <div class='pt-5'>
             @yield('content')
         </div>
+
+        @include('inc.footer')
 
     </div>
 </body>
