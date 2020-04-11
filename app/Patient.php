@@ -26,9 +26,9 @@ class Patient extends Model
         $sofa = $this->getSOFAScore();
         if ($sofa > 11){
             return 3;
-        } else if ($this->isBetween($sofa, 8, 11)) {
+        } else if ($sofa >= 8 && $sofa <= 11) {
             return 2;
-        } else if ($this->isBetween($sofa, 1, 7) || $this->at_least_one_organ_failure ){
+        } else if ($sofa <= 7 && $sofa > 1 || $this->at_least_one_organ_failure ){
             return 1;
         } else {
             return 4;
