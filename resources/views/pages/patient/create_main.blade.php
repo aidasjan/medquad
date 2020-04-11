@@ -71,35 +71,39 @@
                 </div>
                 <hr class='form-group col-md-6 offset-md-1'/>
                 <div class='form-group col-md-3 offset-md-1'>
-                    <label>Platelets, x10<sup>3</sup></label>
+                    <label>Platelets, x10<sup>3</sup> per mcL</label>
+                    <div><small>Normal range: approx. 150 - 400</small></div>
                     <input type='number' value="" step='0.01' name='platelets' class='form-control' required>
                 </div>
                 <hr class='form-group col-md-6 offset-md-1'/>
                 <div class='form-group col-md-3 offset-md-1'>
-                    <label>Bilirubin, mg/dL</label>
+                    <label>Bilirubin, mg/dL </label>
+                    <div><small>Normal range: approx. 0.2 – 1.2</small></div>
                     <input type='number' value="" step='0.01' name='bilirubin' class='form-control' required>
                 </div>
                 <hr class='form-group col-md-6 offset-md-1'/>
                 <h5 class='form-group offset-md-1 px-3 font-weight-bold'>Hypotension</h5>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>MABP, mmHg</label>
+                    <div><small>Normal range: approx. 70 - 100</small></div>
                     <input type='number' value="" step='0.01' name='mabp' id='mabp' class='form-control'>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
-                    <label>Dopamine</label>
+                    <label>Dopamine, ml</label>
                     <input type='number' value="" step='0.01' name='dopamine' id='dopamine' class='form-control' disabled>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
-                    <label>Epinephrine</label>
+                    <label>Epinephrine, ml</label>
                     <input type='number' value="" step='0.01' name='epinephrine' id='epinephrine' class='form-control' disabled>
                 </div>
                 <div class='form-group col-md-3 offset-md-1'>
-                    <label>Norepinephrine</label>
+                    <label>Norepinephrine, ml</label>
                     <input type='number' value="" step='0.01' name='norepinephrine' id='norepinephrine' class='form-control' disabled>
                 </div>
                 <hr class='form-group col-md-6 offset-md-1'/>
                 <div class='form-group col-md-3 offset-md-1'>
                     <label>Creatinine, mg/dL</label>
+                    <div><small>Normal range: approx. 0.6 – 1.2</small></div>
                     <input type='number' value="" step='0.01' name='creatinine' class='form-control' required>
                 </div>
                 <hr class='form-group col-md-6 offset-md-1'/>
