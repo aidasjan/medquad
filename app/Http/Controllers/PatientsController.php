@@ -41,7 +41,7 @@ class PatientsController extends Controller
 
     public function storeInit(Request $request)
     {	
-        
+        if(Patient::count() > 500) return "Maximum patient number exceeded.";
         $patient = new Patient;
         $patient->cardiac_arrest = $request->cardiac_arrest ? true : false;
         $patient->irreversible_hypotension = $request->irreversible_hypotension ? true : false;
