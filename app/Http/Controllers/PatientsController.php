@@ -83,11 +83,11 @@ class PatientsController extends Controller
         $patient->norepinephrine = $request->norepinephrine;
         $patient->creatinine = $request->creatinine;
         $patient->at_least_one_organ_failure = $request->at_least_one_organ_failure ? true : false;
-        $patient->save();
         $group_value = $patient->getGroup();
         $sofa = $patient->getSOFAScore();
         $patient->group_value = $group_value;
         $patient->group = $patient->getGroupNameByNumber($group_value);
+        $patient->save();
         
         return view('/categories'.'/'.$patient->group , ['sofa' => $sofa]);
         
