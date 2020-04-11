@@ -108,7 +108,7 @@
 document.getElementById('mabp').oninput = function () {
     let dopamine = document.getElementById('dopamine');
     let mabpval = document.getElementById('mabp').value;
-    if(mabpval >= 70) {
+    if(mabpval <= 70) {
         dopamine.disabled = false;
     } else dopamine.disabled = true;
 }
