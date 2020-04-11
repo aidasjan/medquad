@@ -41,6 +41,7 @@ class PatientsController extends Controller
 
     public function storeInit(Request $request)
     {	
+        
         $patient = new Patient;
         $patient->cardiac_arrest = $request->cardiac_arrest ? true : false;
         $patient->irreversible_hypotension = $request->irreversible_hypotension ? true : false;
@@ -68,6 +69,7 @@ class PatientsController extends Controller
 
     public function storeMain(Request $request, $id)
     {	
+        
         $patient = Patient::find($id);
         $patient->best_eye_response = $request->best_eye_response;
         $patient->best_verbal_response = $request->best_verbal_response;
@@ -86,7 +88,9 @@ class PatientsController extends Controller
         $sofa = $patient->getSOFAScore();
         $patient->group_value = $group_value;
         $patient->group = $patient->getGroupNameByNumber($group_value);
-        return redirect('/categories'.'/'.$patient->group)->with('sofa', $sofa);
+        
+        return view('/categories'.'/'.$patient->group , ['sofa' => $sofa]);
+        
     }
 
 
