@@ -5,10 +5,15 @@
     {{ csrf_field() }}
     <div class='container'>
 
-        <div class='row container_white shadow py-4 my-3'>
+        <p>
+            The adult clinical ventilator allocation protocol applies to all patients aged 18 and older, who arrives at a hospital. All new arrived patients must undergo this protocol if there is shortage of ventilating systems in your hospital. The protocol consists of three steps: <br/>1. application of exclusion criteria  <br/>2. assessment of mortality risk <br/>3. periodic clinical assessments (“time trials”)<br><br>
+            After filling Step 1 and Step 2 your patient will be asigned to BLUE, RED, YELLOW or GREEN Category and put into Medquad queue. After asigning a patient to the category, you will be instructed, wheater a patient gets a ventilator or alternative forms of medical interventions must be applied.
+        </p>
+
+        <div class='row container_white shadow py-4 mt-4 mb-3'>
             <div class='col'>
                 <div class='form-group col-md-10 offset-md-1'>
-                    <h3 class='my-4 font-weight-bold'>1. Patient personal information</h3>
+                    <h3 class='my-4 font-weight-bold'>Patient personal information</h3>
                 </div>
                 <div class='form-group col-md-6 offset-md-1'>
                     <label>Name</label>
@@ -28,7 +33,10 @@
         <div class='row container_white shadow py-4 my-3'>
             <div class='col'>
                 <div class='form-group col-md-10 offset-md-1'>
-                    <h3 class='my-4 font-weight-bold'>2. Exclusion criteria</h3>
+                    <h3 class='my-4 font-weight-bold'>Step 1. Exclusion criteria</h3>
+                    <p>
+                        A patient’s attending physician examines his/her patient for an exclusion criterion and will forward this clinical data to a triage officer/committee to make the triage decision. Patients with exclusion criteria do not have access to ventilator therapy and instead are provided with alternative forms of medical intervention and/or palliative care. If medical information is not readily available or accessible, it may be assumed a patient is free of exclusion criteria and may proceed to the next step of the clinical ventilator allocation protocol.
+                    </p>
                 </div>
                 <div class='form-group col-md-10 offset-md-1 px-5'>
                     <hr/>

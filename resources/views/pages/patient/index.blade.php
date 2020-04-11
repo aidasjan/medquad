@@ -2,6 +2,20 @@
 @section('content')
 <body>
     <div class='container'>
+        <p>
+            All acute care patients who are in need of a ventilator, whether due to Covid-19 or other conditions, are subject to the clinical ventilator allocation protocol. Using clinical criteria, patients who are deemed most likely to survive with ventilator treatment have an opportunity for ventilator therapy to maximize the number of survivors. The Guidelines’ definition of survival is based on the short-term likelihood of survival of the acute medical episode and is not focused on whether a patient may survive a given illness or disease in the long-term (e.g., years later). This is the queue of patients present in your emergency department.
+        </p>
+
+        <h4>Groups:</h4>
+        <div class='font-weight-bold'>RED - Put this patient onto artificial lung ventilation</div>
+        <div class='font-weight-bold'>YELLOW - Use ventilator as available after all Red category patients received ventilators</div>
+        <div class='font-weight-bold'>BLUE - critical patients, no ventilator is provided, use alternative medical intervention</div>
+        <div class='font-weight-bold mb-4'>GREEN - Use alternative form of medical intervention or defer or discharge</div>
+
+        <hr/>
+
+        <h2 class='py-3'>Active Patients</h2>
+
         <table class="table table_main table-striped text-center">
             <thead>
                 <tr>
