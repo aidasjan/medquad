@@ -69,14 +69,16 @@ class Patient extends Model
         }
 
         if($this->mabp !== null){
-            if ($this->mabp < 70){
-                $sofa++;
+            if ($this->mabp > 70){
+                $sofa+=0;
             } else if ($this->dopamine && $this->dopamine < 5){
                 $sofa+=2;
             } else if ($this->dopamine && $this->epinephrine && $this->norepinephrine && $this->isBetween($this->dopamine, 6, 15) || $this->epinephrine < 0.1 || $this->norepinephrine < 0.1){
                 $sofa+=3;
             } else if ($this->dopamine && $this->epinephrine && $this->norepinephrine && $this->dopamine > 15 || $this->epinephrine > 0.1 || $this->norepinephrine > 0.1){
                 $sofa+=4;
+            } else {
+                $sofa+=1;
             }
         }
         

@@ -66,6 +66,10 @@
                         <label>Other conditions resulting in immediate or near-immediate mortality even with aggressive therapy</label>
                     </div>
                     <hr/>
+                    <div>
+                        <input class="form-check-input" type="checkbox">
+                        <label>The patient has no exclusion criteria listed above</label>
+                    </div>
                     
                 </div>
             </div>
