@@ -22,6 +22,14 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        DB::table('users')->insert(
+            array(
+                'email' => 'test@medquad.herokuapp.com',
+                'name' => 'Test',
+                'password' => Hash::make('corona2020'),
+            )
+        );
     }
 
     /**

@@ -24,3 +24,7 @@ Route::get('/categories/green', 'PatientsController@indexGreen');
 Route::post('/patients/{id}/add/main', 'PatientsController@storeMain');
 //Route::get('/patients/{id}/destroy', 'PatientsController@destroy');
 Route::get('/patients/recreate/79vonc8b6evwus8cbtoh0nj2s4c7tnrdpvjds', 'PatientsController@recreate');
+
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');

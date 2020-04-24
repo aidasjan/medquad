@@ -28,7 +28,7 @@
         
         @include('inc.navbar')
         
-        <div class='pt-5'>
+        <div class='pt-5 pb-5'>
             @yield('content')
         </div>
 

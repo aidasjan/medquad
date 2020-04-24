@@ -17,8 +17,14 @@
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-3">
-                <a class="nav-link text-uppercase font-weight-bold mx-2" style='color: #fff;' href="{{url('/')}}"> All Patients </a>
-                <a class="nav-link text-uppercase font-weight-bold mx-2" style='color: #fff;' href="{{url('/patients/add/init')}}"> Add New Patient </a>
+                @auth
+                    <a class="nav-link text-uppercase font-weight-bold mx-2" style='color: #fff;' href="{{url('/')}}"> All Patients </a>
+                    <a class="nav-link text-uppercase font-weight-bold mx-2" style='color: #fff;' href="{{url('/patients/add/init')}}"> Add New Patient </a>
+                    <a class="nav-link text-uppercase font-weight-bold mx-2" style='color: #fff;' href="{{url('/logout')}}"> Logout </a>
+                @endauth
+                @guest
+                    <a class="nav-link text-uppercase font-weight-bold mx-2" style='color: #fff;' href="{{url('/login')}}"> Login </a>
+                @endguest
             </ul>
         </div>
     </div>

@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\DB;
 class PatientsController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $patients = Patient::all()->where('group', '<>', null)->sortBy('group_value');
